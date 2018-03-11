@@ -1,0 +1,20 @@
+<h1>
+  {{title}}
+</h1>
+
+<button (click) ="fetchDataPromise()">
+	fetch data using promise
+</button>
+
+<button (click) ="fetchDataOb()">
+	fetch data using observables
+</button>
+
+
+<!-- *********jsonp******* -->
+<input type="text" name="" #searchItem (keyup)="searchWiki(searchItem.value)">
+<ul>
+	<li *ngFor="let item of items">
+		{{item}}
+	</li>
+</ul>
